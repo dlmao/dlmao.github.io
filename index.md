@@ -14,9 +14,11 @@ I am currently a student at University of California, Davis, double majoring in 
 ### Experience
 
 * Intern
+
 *Center of Computer Application Engineering, Zhejiang University, Hangzhou, China*
 *June 2018 – August 2018*
 
 * Intern
+
 *Paragon Partners*
 *June 2016 – August 2016*
