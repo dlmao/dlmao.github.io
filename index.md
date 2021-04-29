@@ -4,8 +4,7 @@ I am currently a student at University of California, Davis, double majoring in 
 
 ### Education
 
-* BS in Statistical Data Science and Applied Mathematics, 2021
-
+* BS in Statistical Data Science and Applied Mathematics, 2021..
 *University of California, Davis*
 
 ### Projects
