@@ -4,7 +4,7 @@ I am currently a student at University of California, Davis, double majoring in 
 
 ### Education
 
-* BS in Statistical Data Science and Applied Mathematics, 2021..
+* BS in Statistical Data Science and Applied Mathematics, 2021<br>
 *University of California, Davis*
 
 ### Projects
@@ -13,10 +13,10 @@ I am currently a student at University of California, Davis, double majoring in 
 
 ### Experience
 
-* Intern..
+* Intern<br>
 *Center of Computer Application Engineering, Zhejiang University, Hangzhou, China*
 *June 2018 – August 2018*
 
-* Intern..
+* Intern<br>
 *Paragon Partners*
 *June 2016 – August 2016*
