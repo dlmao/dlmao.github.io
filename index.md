@@ -13,10 +13,9 @@ I am currently a student at University of California, Davis, double majoring in 
 
 An R package that implements bag of little boostrap algorithm for various statistical models.
 
-#### Classifying Toxic Comments
+#### [Classifying Toxic Comments](https://github.com/dlmao/Sta142a-Project)
 
-This is a link to [Google](https://google.com)
-
+Use of NLP Algorithms, Stanford Glove embedding, and Bidirectional Lstm to classify toxic wikipedia comments.
 
 ### Skills
 
