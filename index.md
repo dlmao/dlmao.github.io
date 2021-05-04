@@ -11,6 +11,11 @@ I am currently a student at University of California, Davis, double majoring in 
 
 #### Blbmethods
 
+An R package that implements bag of little boostrap algorithm for various statistical models.
+
+[link](/projects/blbmethods.html)
+
+#### Classifying Toxic Comments
 
 ### Skills
 

@@ -20,4 +20,4 @@ Boostrapping falls into a category of techniques know as resampling methods. The
 
 ### What is Bag of Little Boostrap?
 
-Enter bag of little boostrap (blb). Blb is a technique that combines the map reduce algorithm with boostrapping to create a robust and computationally efficient resampling method. First, the dataset is divided into $n$ approximatly equal sized subsets. Boostrapping is then performed on each of these subsets. The results of each subset are then averaged.
+Enter bag of little boostrap (blb). Blb is a technique that combines the map reduce algorithm with boostrapping to create a robust and computationally efficient resampling method that is scalable for large amounts of data. First, the dataset is divided into $n$ approximatly equal sized subsets. Boostrapping is then performed on each of these subsets. The results of each subset are then averaged.
