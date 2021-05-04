@@ -11,7 +11,6 @@ I am currently a student at University of California, Davis, double majoring in 
 
 #### Blbmethods
 
-[blbmethods]({% https://dlmao.github.io/projects/blbmethods 2021-05-03-blbmethods %})
 
 ### Skills
 
