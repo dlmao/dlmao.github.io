@@ -13,9 +13,14 @@ I am currently a student at University of California, Davis, double majoring in 
 
 An R package that implements bag of little boostrap algorithm for various statistical models.
 
-
-
 #### Classifying Toxic Comments
+
+---
+title: External Posts in Jekyll
+layout: external
+external_url: https://thoughtbot.com/blog/post/12345/external-posts-in-jekyll
+---
+
 
 ### Skills
 
