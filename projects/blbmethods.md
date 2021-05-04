@@ -16,7 +16,7 @@ devtools::install_github("dlmao/blbmethods")
 
 ### Limitations of Bootstrapping
 
-Bootstrapping falls into a category of techniques know as resampling methods. The idea behind bootstrapping is to artificially generate many "new" datasets from one dataset. The efficacy of bootstrapping depends on two things: the size of the dataset and the number of resamplings. Both need to be high in order to have accurate bootstrapping results. However, when the size of the dataset becomes too large, in otherwords dealing with "big data", the computational efficiency of performing boostrap dramatically decreases.
+Bootstrapping falls into a category of techniques know as resampling methods. The idea behind bootstrapping is to artificially generate many "new" datasets from one dataset. The efficacy of bootstrapping depends on two things: the size of the dataset and the number of resamplings. Both need to be high in order to have accurate bootstrapping results. However, when the size of the dataset becomes too large, in otherwords dealing with "big data", the computational efficiency of performing bootstrap dramatically decreases.
 
 ### What is Bag of Little Boostrap?
 
