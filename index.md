@@ -9,6 +9,10 @@ I am currently a student at University of California, Davis, double majoring in 
 
 ### Projects
 
+#### Blbmethods
+
+[blbmethods]({% https://dlmao.github.io/projects/blbmethods 2021-05-03-blbmethods %})
+
 ### Skills
 
 * **Computer Skills**: Python, R, Matlab, SQL, Git, AMPL, C/C++, JavaScript, Excel
