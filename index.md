@@ -15,11 +15,7 @@ An R package that implements bag of little boostrap algorithm for various statis
 
 #### Classifying Toxic Comments
 
----
-title: External Posts in Jekyll
-layout: external
-external_url: https://thoughtbot.com/blog/post/12345/external-posts-in-jekyll
----
+This is a link to [Google](https://google.com)
 
 
 ### Skills
