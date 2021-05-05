@@ -5,7 +5,7 @@ I am currently a student at University of California, Davis, double majoring in 
 
 Check out my comprehensive mathematics for data science [cheatsheet]({{ site.url }}/assets/pdf/Ds_cheatsheet.pdf). Includes mathematical formulation and basic intuition of:
 
-* Machine Learning Models (Tree ensemble methods, Neural Networks, ...)
+* Machine Learning Models (Neural Networks, Tree ensembles, ...)
 
 * Clustering Methods (K-means, Spectral Clustering, ...)
 
@@ -13,4 +13,4 @@ Check out my comprehensive mathematics for data science [cheatsheet]({{ site.url
 
 * Network Flow
 
-* and Much More...
+* and much more...
