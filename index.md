@@ -7,16 +7,6 @@ I am currently a student at University of California, Davis, double majoring in 
 * BS in Statistical Data Science and Applied Mathematics, 2021<br>
 *University of California, Davis*
 
-### Projects
-
-#### [Blbmethods](/projects/blbmethods.html)
-
-An R package that implements bag of little boostrap algorithm for various statistical models.
-
-#### [Classifying Toxic Comments](https://github.com/dlmao/Sta142a-Project)
-
-Use of NLP Algorithms, Stanford Glove embedding, and Bidirectional Lstm to classify toxic wikipedia comments.
-
 ### Skills
 
 * **Computer Skills**: Python, R, Matlab, SQL, Git, AMPL, C/C++, JavaScript, Excel
