@@ -13,4 +13,6 @@ Suppose you watch a movie on Netflix that you really enjoy. After you finish the
 
 ## What Does Matrix Factorization Have to Do With This?
 
-Let's go back to the Netflix Movie example. Suppose on Netflix's site, there are {% raw %} $$i$$  {% endraw %} users and {% raw %}  $$j$$  {% endraw %} users. Then if each user gave each movie a rating, we would have {% raw %} $$i \times j$$  {% endraw %} ratings, which we can then store into an {% raw %} $$i \times j$$  {% endraw %} matrix, which we will call {% raw %} $$M_{ij}$$  {% endraw %}, where each row of this matrix represents a user and each column represents a movie.
+Let's go back to the Netflix Movie example. Suppose on Netflix's site, there are {% raw %} $$m$$  {% endraw %} users and {% raw %}  $$n$$  {% endraw %} users. Then if each user gave each movie a rating, we would have {% raw %} $$m \times n$$  {% endraw %} ratings, which we can then store into an {% raw %} $$m \times n$$  {% endraw %} matrix, which we will call {% raw %} $$M$$  {% endraw %}, where each row of this matrix represents a user and each column represents a movie.
+
+Now this matrix {% raw %} $$M$$  {% endraw %} can be represented by two lower dimension matrices by {% raw %} $$M=U*V$$  {% endraw %}. Here, {% raw %} $$U$$  {% endraw %} is size {% raw %} $$m \times r$$  {% endraw %},  {% raw %} $$V$$  {% endraw %} is size {% raw %} $$r \times n$$  {% endraw %}, and {% raw %} $$r$$  {% endraw %} is less than the smallest of {% raw %} $$m, n$$  {% endraw %}, but is usually much smaller than both.
