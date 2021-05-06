@@ -7,7 +7,7 @@ author: David Mao
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-Suppose you watch a movie on Netflix that you really enjoy. After you finish the movie, you give the movie a five star rating. Immediately afterwards, Netflix reccommends you several other movies that you might also enjoy. What you have witnessed here is a reccomendation system in action. Recommendation systems are machine learning models that seeks to reccommend products to users based on past user interaction. It has applications in many places, mainly in advertisements, shopping websites, and movie applications.
+Suppose you watch a movie on Netflix that you really enjoy. After you finish the movie, you give the movie a five star rating. Immediately afterwards, Netflix reccommends you several other movies that you might also enjoy. What you have witnessed here is a reccomendation system in action. Recommendation systems are machine learning models that seeks to recommend products to users based on past user interaction. It has applications in many places, mainly in advertisements, shopping websites, and movie applications.
 
 ## How Does Matrix Factorization Work?
 
@@ -36,3 +36,5 @@ Thus, our gradient descent algorithm becomes:
 {% raw %} $$\Delta U_{i.}=U_{i.}-\eta 2V_{.j}(U_{i.}V_{.j}-M_{ij})$$ {% endraw %}
 
 {% raw %} $$\Delta V_{.j}=V_{.j}-\eta 2U_{i.}(U_{i.}V_{.j}-M_{ij})$$ {% endraw %}
+
+## A Coding Example in Python
