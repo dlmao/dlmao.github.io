@@ -38,3 +38,145 @@ Thus, our gradient descent algorithm becomes:
 {% raw %} $$\Delta V_{.j}=V_{.j}-\eta 2U_{i.}(U_{i.}V_{.j}-M_{ij})$$ {% endraw %}
 
 ## A Coding Example in Python
+
+For this part, we will use a dataset from MovieLens, a movie reccomendation system. The dataset can be[here](http://files.grouplens.org/datasets/movielens/ml-latest-small-README.html). 
+
+```python
+import numpy as np
+import pandas as pd
+from sklearn.model_selection import train_test_split
+```
+
+
+```python
+ratings_list = pd.read_csv('ratings.csv', sep=',', header=0, usecols=[0, 1, 2]).values
+ratings_list
+```
+
+
+
+
+    array([[1.00000e+00, 1.00000e+00, 4.00000e+00],
+           [1.00000e+00, 3.00000e+00, 4.00000e+00],
+           [1.00000e+00, 6.00000e+00, 4.00000e+00],
+           ...,
+           [6.10000e+02, 1.68250e+05, 5.00000e+00],
+           [6.10000e+02, 1.68252e+05, 5.00000e+00],
+           [6.10000e+02, 1.70875e+05, 3.00000e+00]])
+
+
+
+
+```python
+# replace movie id and user id with new ids ranging from 0 to n-1 for easier indexing
+n, indices = np.unique(ratings_list[:,1], return_inverse=True)
+ratings_list[:,0] = ratings_list[:,0] - 1
+ratings_list[:,1] = indices
+```
+
+
+```python
+m = 610
+n = 9724
+ratings_mat = np.zeros((m, n))
+for i in range(len(ratings_list)):
+    ratings_mat[int(ratings_list[i,0]), int(ratings_list[i,1])] = ratings_list[i,2]
+
+ratings_mat
+```
+
+
+
+
+    array([[4. , 0. , 4. , ..., 0. , 0. , 0. ],
+           [0. , 0. , 0. , ..., 0. , 0. , 0. ],
+           [0. , 0. , 0. , ..., 0. , 0. , 0. ],
+           ...,
+           [2.5, 2. , 2. , ..., 0. , 0. , 0. ],
+           [3. , 0. , 0. , ..., 0. , 0. , 0. ],
+           [5. , 0. , 0. , ..., 0. , 0. , 0. ]])
+
+
+
+
+```python
+idx = ratings_list[:,0:2]
+idx_train, idx_test = train_test_split(idx, test_size=0.2, random_state=1) # split known points into test and train set
+idx_train.shape, idx_test.shape
+```
+
+
+
+
+    ((80668, 2), (20168, 2))
+
+
+
+
+```python
+def gradu(ui, vj, mij):
+    return 2*vj*(np.dot(ui, vj) - mij) # calculate gradient for U
+
+def gradv(ui, vj, mij):
+    return 2*ui*(np.dot(ui, vj) - mij) # calculate gradient for V
+```
+
+
+```python
+def MatFac_train(train, M, m, n, r=10, eta=0.001, MAX_ITER=20, seed=1):
+    np.random.seed(seed)
+    # initialize U and V
+    U = np.random.random_sample((m, r))
+    V = np.random.random_sample((r, n))
+    itr = 0
+    while itr<MAX_ITER:
+        itr = itr + 1
+        for k in range(len(train)):
+            i = int(train[k,0])
+            j = int(train[k,1])
+            mij = M[i,j]
+            delt_u = gradu(U[i,:], V[:,j], mij)
+            U[i,:] = U[i,:] - eta * delt_u # gradient descent for U
+            delt_v = gradv(U[i,:], V[:,j], mij)
+            V[:,j] = V[:,j] - eta * delt_v # gradient descent for V
+            
+    return U, V
+```
+
+
+```python
+U, V = MatFac_train(idx_train, ratings_mat, m, n)
+U.shape, V.shape
+```
+
+
+
+
+    ((610, 10), (10, 9724))
+
+
+
+
+```python
+def test_MSE(test, M, U, V):
+    tot_sum = 0
+    l = len(test)
+    for k in range(l):
+        i = int(test[k,0])
+        j = int(test[k,1])
+        tot_sum = tot_sum + (np.dot(U[i,:], V[:,j]) - M[i,j])**2
+        
+    return tot_sum/l
+```
+
+
+```python
+test_MSE(idx_test, ratings_mat, U, V)
+```
+
+
+
+
+    0.8340972471734859
+
+
