@@ -20,3 +20,5 @@ So now how do we find {% raw %} $$U$$  {% endraw %} and {% raw %} $$V$$  {% endr
 {% raw %} $$\underset{U,V}{\min}||P_{\Omega_{train}}(U*V-M)||^2_F$$ {% endraw %}
 
 where {% raw %} $$P_{(i,j)}(x)=x$$ {% endraw %} if {% raw %} $$(i,j)\in\Omega_{train}$$ {% endraw %}.
+
+We can solve this optimization problem using gradient descent. First, lets get some intuition on what gradient descent is doing here. One specific entry {% raw %} $$M_{ij}$$  {% endraw %} is represented by {% raw %} $$U_{i.}*V_{.j}$$  {% endraw %}, which is the ith row of {% raw %} $$U$$  {% endraw %} times the jth row of {% raw %} $$V$$  {% endraw %}. So given a rating {% raw %} $$M_{ij}$$  {% endraw %}, we know something about the the ith user and the jth user. 
