@@ -19,4 +19,4 @@ So now how do we find {% raw %} $$U$$  {% endraw %} and {% raw %} $$V$$  {% endr
 
 {% raw %} $$\underset{U,V}{\min}||P_{\Omega_{train}}(U*V-M)||^2_F$$ {% endraw %}
 
-where {% raw %} $$P_{(i,j)}(x)=x$$ {% endraw %} if {% raw %} $$(i,j)\in\Omega_{train}$$ {% endraw %}, and {% raw %} $$||x||^2_F$$  {% endraw %} denotes the Frobenius norm.
+where {% raw %} $$P_{(i,j)}(x)=x$$ {% endraw %} if {% raw %} $$(i,j)\in\Omega_{train}$$ {% endraw %}.
