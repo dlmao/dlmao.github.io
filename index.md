@@ -14,3 +14,11 @@ Check out my comprehensive mathematics for data science [cheatsheet]({{ site.url
 * Network Flow
 
 * and much more...
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
