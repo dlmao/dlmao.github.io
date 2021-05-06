@@ -15,6 +15,8 @@ Check out my comprehensive mathematics for data science [cheatsheet]({{ site.url
 
 * and much more...
 
+## Blog Posts
+
 <ul>
   {% for post in site.posts %}
     <li>
