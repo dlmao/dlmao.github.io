@@ -1,12 +1,11 @@
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
 ---
 layout: post
 title: "Building a Simple Recommendation System with Matrix Factorization and Gradient Descent"
 author: David Mao
 ---
 
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 ## Building a Simple Recommendation System with Matrix Factorization and Gradient Descent
 
