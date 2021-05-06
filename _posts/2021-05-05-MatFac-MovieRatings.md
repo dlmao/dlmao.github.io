@@ -39,7 +39,7 @@ Thus, our gradient descent algorithm becomes:
 
 ## A Coding Example in Python
 
-For this part, we will use a dataset from MovieLens, a movie reccomendation system. The dataset can be[here](http://files.grouplens.org/datasets/movielens/ml-latest-small-README.html). 
+For this part, we will use a dataset from MovieLens, a movie reccomendation system. The dataset includes movie ratings on a scale of 1 star to 5 stars, from 610 users and 9724 movies, but we only know 100836 (1.7%) of the ratings. The dataset can be found [here](http://files.grouplens.org/datasets/movielens/ml-latest-small-README.html). 
 
 ```python
 import numpy as np
@@ -47,6 +47,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 ```
 
+First, we load our dataset. The first column of our dataset contains ids that represent individual users, the second column contains ids that represent movies, and the third column contains movie ratings corresponding to a specific user and movie.
 
 ```python
 ratings_list = pd.read_csv('ratings.csv', sep=',', header=0, usecols=[0, 1, 2]).values
