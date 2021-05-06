@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Building a Simple Recommendation System with Matrix Factorization and Gradient Descent"
+title: "Building a Simple Recommendation System with Matrix Factorization"
 author: David Mao
 ---
 
@@ -11,7 +11,7 @@ author: David Mao
 
 Suppose you watch a movie on Netflix that you really enjoy. After you finish the movie, you give the movie five stars. Immediately afterwards, Netflix reccommends you several other movies that you might also enjoy. What you have witnessed here is a reccomendation system in action. Recommendation systems are machine learning models that seeks to reccommend products to users based on past user interaction. It has applications in many places, mainly in advertisements, shopping websites, and movie applications.
 
-## What Does Matrix Factorization Have to Do With This?
+## How Does Matrix Factorization Work?
 
 Let's go back to the Netflix Movie example. Suppose on Netflix's site, there are {% raw %} $$m$$  {% endraw %} users and {% raw %}  $$n$$  {% endraw %} users. Then if each user gave each movie a rating, we would have {% raw %} $$m \times n$$  {% endraw %} ratings, which we can then store into an {% raw %} $$m \times n$$  {% endraw %} matrix, which we will call {% raw %} $$M$$  {% endraw %}, where each row of this matrix represents a user and each column represents a movie.
 
