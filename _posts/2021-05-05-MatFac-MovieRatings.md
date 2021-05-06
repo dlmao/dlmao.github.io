@@ -17,4 +17,6 @@ Now this matrix {% raw %} $$M$$  {% endraw %} can be approximated by two lower d
 
 So now how do we find {% raw %} $$U$$  {% endraw %} and {% raw %} $$V$$  {% endraw %}? In practice, we are given a training set of values in {% raw %} $$M$$ {% endraw %} which we already know the values of. So if each entry of {% raw %} $$M$$  {% endraw %} is denoted {% raw %} $$M_{ij}$$ {% endraw %}, we will denote the training set  {% raw %} $$\Omega_{train}=\{(i,j)\}$$ {% endraw %} where {% raw %} $$M_{ij}$$ {% endraw %} is known. We want {% raw %} $$U*V$$ {% endraw %} to be as close to {% raw %} $$M$$ {% endraw %} as possible for the entries of {% raw %} $$M$$ {% endraw %} that we know. More specifically, we can write this as the following optimization problem:
 
-{% raw %} $$\underset{U,V}{\min}||P_{\Omega_{train}(U*V-M)}||^2_F$$ {% endraw %}
+{% raw %} $$\underset{U,V}{\min}||P_{\Omega_{train}}(U*V-M)||^2_F$$ {% endraw %}
+
+where {% raw %} $$P_{(i,j)}(x)=x$$ {% endraw %} if {% raw %} $$(i,j)\in\Omega_{train}$$ {% endraw %}, and {% raw %} $$||.||^2_F$$  {% endraw %} denotes the Frobenius norm.
