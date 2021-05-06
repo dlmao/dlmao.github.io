@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Building a Simple Recommendation System with Matrix Factorization and Gradient Descent"
+title: "Building a Simple Recommendation System with Matrix Factorization and Gradient Descent"
 author: David Mao
 ---
 
@@ -10,3 +10,4 @@ Suppose you watch a movie on Netflix that you really enjoy. After you finish the
 
 ## What Does Matrix Factorization Have to Do With This?
 
+Let's go back to the Netflix Movie example. Suppose on Netflix's site, there are \\[ i \\] movies and \\[ j \\] users.
