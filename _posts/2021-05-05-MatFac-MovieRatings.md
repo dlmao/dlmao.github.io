@@ -27,8 +27,12 @@ We can solve this optimization problem using gradient descent. First, lets get s
 
 To find the gradient, we take the derivative of this function is accordance to {% raw %} $$U_{i.}$$ {% endraw %} and {% raw %} $$V_{.j}$$ {% endraw %}. We get the following gradients:
 
-{% raw %} $$\delta U_{i.}$$ {% endraw %}
+{% raw %} $$\Delta U_{i.}=2V_{.j}(U_{i.}V_{.j}-M_{ij})$$ {% endraw %}
 
-{% raw %} $$\delta V_{.j}$$ {% endraw %}
+{% raw %} $$\Delta V_{.j}=2U_{i.}(U_{i.}V_{.j}-M_{ij})$$ {% endraw %}
 
 Thus, our gradient descent algorithm becomes:
+
+{% raw %} $$\Delta U_{i.}=U_{i.}-\eta 2V_{.j}(U_{i.}V_{.j}-M_{ij})$$ {% endraw %}
+
+{% raw %} $$\Delta V_{.j}=V_{.j}-\eta 2U_{i.}(U_{i.}V_{.j}-M_{ij})$$ {% endraw %}
