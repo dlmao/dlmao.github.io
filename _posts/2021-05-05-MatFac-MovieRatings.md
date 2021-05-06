@@ -24,3 +24,11 @@ where {% raw %} $$P_{(i,j)}(x)=x$$ {% endraw %} if {% raw %} $$(i,j)\in\Omega_{t
 We can solve this optimization problem using gradient descent. First, lets get some intuition on what gradient descent is doing here. One specific entry {% raw %} $$M_{ij}$$  {% endraw %} is represented by {% raw %} $$U_{i.}*V_{.j}$$  {% endraw %}, which is the ith row of {% raw %} $$U$$  {% endraw %} times the jth row of {% raw %} $$V$$  {% endraw %}. So given a rating {% raw %} $$M_{ij}$$  {% endraw %}, we know something about the the ith user and the jth user, and can adjust {% raw %} $$U_{i.}$$  {% endraw %} and {% raw %} $$V_{.j}$$  {% endraw %} accordingly. Now, to implement this mathematically. Recall our objective function from earlier. Since we are working with the Frobenius norm, with each training point in {% raw %} $$\Omega_{train}$$ {% endraw %}, we want to minimize the following:
 
 {% raw %} $$\underset{U_{i.},V_{.j}}{\min}||P_{\Omega_{train}}(U_{i.}*V_{.j}-M_{ij})||^2$$ {% endraw %}
+
+To find the gradient, we take the derivative of this function is accordance to {% raw %} $$U_{i.}$$ {% endraw %} and {% raw %} $$V_{.j}$$ {% endraw %}. We get the following gradients:
+
+{% raw %} $$\delta U_{i.}$$ {% endraw %}
+
+{% raw %} $$\delta V_{.j}$$ {% endraw %}
+
+Thus, our gradient descent algorithm becomes:
