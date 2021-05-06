@@ -7,7 +7,6 @@ title: "Building a Simple Recommendation System with Matrix Factorization and Gr
 author: David Mao
 ---
 
--mml-chtml.js"></script>
 
 ## Building a Simple Recommendation System with Matrix Factorization and Gradient Descent
 
