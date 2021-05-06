@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How Does Netflix Recommend Your Next Movie: Building a Simple Recommendation System with Matrix Factorization"
+title: "How Netflix Recommend Your Next Movie: Building a Simple Recommendation System with Matrix Factorization"
 author: David Mao
 ---
 
