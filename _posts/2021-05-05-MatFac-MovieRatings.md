@@ -166,7 +166,9 @@ U.shape, V.shape
 
 
 
-Now we need a measure to judge the accuracy of our prediction matrices. For that, we will use the MSE, which is calculated by {% raw %} $$MSE=\frac{1}{|\Omega_{test}|}\sum_{i,j}\in \Omega_{test}(U_{i.}*V_{.j}-M_{ij})$$  {% endraw %}.
+Now we need a measure to judge the accuracy of our prediction matrices. For that, we will use the MSE, which is calculated by:
+
+{% raw %} $$MSE=\frac{1}{\Omega_{test}}\sum_{i,j}\in \Omega_{test}(U_{i.}*V_{.j}-M_{ij})$$  {% endraw %}.
 
 ```python
 def test_MSE(test, M, U, V):
