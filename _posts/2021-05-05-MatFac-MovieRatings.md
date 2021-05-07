@@ -39,7 +39,7 @@ Thus, our gradient descent algorithm becomes:
 
 ## A Coding Example in Python
 
-For this part, we will use a dataset from MovieLens, a movie reccomendation system. The dataset includes movie ratings on a scale of 1 star to 5 stars, from 610 users and 9724 movies, but we only know 100836 (1.7%) of the ratings. The dataset can be found [here](http://files.grouplens.org/datasets/movielens/ml-latest-small-README.html). The full Python notebook can be found on my personal Github [here] (https://github.com/dlmao/MatFac_Recommendation).
+For this part, we will use a dataset from MovieLens, a movie reccomendation system. The dataset includes movie ratings on a scale of 1 star to 5 stars, from 610 users and 9724 movies, but we only know 100836 (1.7%) of the ratings. The dataset can be found [here](http://files.grouplens.org/datasets/movielens/ml-latest-small-README.html). The full Python notebook can be found on my personal Github [here](https://github.com/dlmao/MatFac_Recommendation).
 
 ```python
 import numpy as np
