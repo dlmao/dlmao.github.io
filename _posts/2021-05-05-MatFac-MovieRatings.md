@@ -168,7 +168,7 @@ U.shape, V.shape
 
 Now we need a measure to judge the accuracy of our prediction matrices. For that, we will use the MSE, which is calculated by:
 
-{% raw %} $$MSE=\frac{1}{\Omega_{test}}\sum_{i,j}\in \Omega_{test}(U_{i.}*V_{.j}-M_{ij})$$  {% endraw %}.
+{% raw %} $$MSE=\frac{1}{size(\Omega_{test})}\sum_{i,j}\in \Omega_{test}(U_{i.}*V_{.j}-M_{ij})$$  {% endraw %}.
 
 ```python
 def test_MSE(test, M, U, V):
@@ -193,3 +193,8 @@ test_MSE(idx_test, ratings_mat, U, V)
     0.8340972471734859
 
 
+With only 1.7% of our data known, we were able to predict user ratings with an MSE of 0.83, meaning on average, we were able to predict ratings to be within one star of what users actually felt about the movie. 
+
+## Future Tasks
+
+For Matrix Factorization, the choice of  {% raw %} $$r$$  {% endraw %} matters a lot. Try and see what different values of  {% raw %} $$r$$  {% endraw %} do. Additionally, for gradient descent, the learning rate combined with the number of iterations is also important for determining the optimal value of our optimization problem. Try different combinations of these values to see if a better minimum can be found.
