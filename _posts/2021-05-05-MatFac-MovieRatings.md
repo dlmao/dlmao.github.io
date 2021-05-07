@@ -68,13 +68,16 @@ ratings_list
 
 
 
+Now, we construct matrix {% raw %} $$M$$  {% endraw %}. To make things easier, we will replace user ids with values from 0 to n-1 and movie ids with values from 0 to m-1.
+
 ```python
-# replace movie id and user id with new ids ranging from 0 to n-1 for easier indexing
+# replace movie id and user id with new ids ranging from 0 to n-1, m-1 for easier indexing
 n, indices = np.unique(ratings_list[:,1], return_inverse=True)
 ratings_list[:,0] = ratings_list[:,0] - 1
 ratings_list[:,1] = indices
 ```
 
+Matrix {% raw %} $$M$$  {% endraw %} is a {% raw %} $$610 \times 9724$$  {% endraw %} matrix with rows as users and columns as movies. Since we do not interact with the values of {% raw %} $$M$$  {% endraw %} that we do not know, we will just keep them as zero.
 
 ```python
 m = 610
@@ -100,6 +103,8 @@ ratings_mat
 
 
 
+Now, we will construct {% raw %} $$\omega_{train}$$  {% endraw %} and {% raw %} $$\omega_{test}$$  {% endraw %}. Taking the indexes of our known values, (the first two columns of our initial data), we will then do a 0.2 split test train split.
+
 ```python
 idx = ratings_list[:,0:2]
 idx_train, idx_test = train_test_split(idx, test_size=0.2, random_state=1) # split known points into test and train set
@@ -114,6 +119,8 @@ idx_train.shape, idx_test.shape
 
 
 
+Next, we will then create two functions to calculate the two gradients for {% raw %} $$U$$  {% endraw %} and {% raw %} $$V$$  {% endraw %} we found earlier, {% raw %} $$\Delta U_{i.}=2V_{.j}(U_{i.}V_{.j}-M_{ij})$$ {% endraw %}, {% raw %} $$\Delta V_{.j}=2U_{i.}(U_{i.}V_{.j}-M_{ij})$$ {% endraw %}.
+
 ```python
 def gradu(ui, vj, mij):
     return 2*vj*(np.dot(ui, vj) - mij) # calculate gradient for U
@@ -122,6 +129,7 @@ def gradv(ui, vj, mij):
     return 2*ui*(np.dot(ui, vj) - mij) # calculate gradient for V
 ```
 
+Finally, we implement the gradient descent algorithm. The first thing we need to do is initialize the values of {% raw %} $$U$$  {% endraw %} and {% raw %} $$V$$  {% endraw %} given a value of {% raw %} $$r$$  {% endraw %}, which we will chose to equal 10. Next, for a specified number of iterations, we will, for every point in our training set, subtract the gradient times the learning rate. We choose here the the learning rate to be 0.001 and iterations to be 20.
 
 ```python
 def MatFac_train(train, M, m, n, r=10, eta=0.001, MAX_ITER=20, seed=1):
@@ -157,6 +165,8 @@ U.shape, V.shape
 
 
 
+
+Now we need a measure to judge the accuracy of our prediction matrices. For that, we will use the MSE, which is calculated by {% raw %} $$MSE=\frac{1}{|\Omega_{test}|}\sum_{i,j}\in \Omega_{test}(U_{i.}*V_{.j}-M_{ij})$$  {% endraw %}.
 
 ```python
 def test_MSE(test, M, U, V):
