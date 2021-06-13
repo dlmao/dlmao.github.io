@@ -7,9 +7,9 @@
 
 ### Skills
 
-* **Computer Skills**: Python, R, Matlab, SQL, Git, AMPL, C/C++, JavaScript, Excel
+* **Computer Skills**: Python (Scikit-learn, Tensorflow), R, Matlab, SQL, SQL Server/SSMS, Git/GitHub, AMPL, C/C++, JavaScript, HTML, Web Scaping, MS Excel
 
-* **Data Science Skills**: Machine Learning, Deep Learning, Data Analysis, Big Data, Data Wrangling, Data Visualization
+* **Data Science Skills**: Classification, Regression, Clustering, SVM, Random Forest, Time Series Analysis, DNN, NLP, Data Wrangling, Data Exploration, Data Visualization, Text Mining, Big Data, MapReduce, Hypothesis Testing
 
 ### Experience
 
