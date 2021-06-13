@@ -2,7 +2,7 @@
 
 ### Education
 
-* BS double major in Statistical Data Science and Applied Mathematics, 2021<br>
+* BS double major in Statistical Data Science and Applied Mathematics, June 2021<br>
 *University of California, Davis*
 
 ### Skills
