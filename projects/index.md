@@ -8,7 +8,7 @@ An R package that implements bag of little boostrap algorithm for various statis
 
 Use of NLP Algorithms, Stanford Glove embedding, and Bidirectional LSTM to classify toxic wikipedia comments.
 
-#### [Unsupervised Music Genre Classification] (https://github.com/dlmao/SignalProcessing/)
+#### [Unsupervised Music Genre Classification](https://github.com/dlmao/SignalProcessing)
 
 First place submission in class competition. Data pipeline that includes feature engineering, dimensional reduction, then clustering to group music pieces on their similarities. 
 
