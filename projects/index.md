@@ -12,7 +12,7 @@ Use of NLP Algorithms, Stanford Glove embedding, and Bidirectional LSTM to class
 
 First place submission in class competition. Data pipeline that includes feature engineering, dimensional reduction, then clustering to group music pieces on their similarities. 
 
-#### [NYC Airbnb Data Analysis](https://github.com/dlmao/Covid19Analysis)
+#### [Covid-19 Data Analysis](https://github.com/dlmao/Covid19Analysis)
 
 Analysis on the impact of the Covid-19 Pandemic on groups at risk in California based on CDC confirmed data.
 
