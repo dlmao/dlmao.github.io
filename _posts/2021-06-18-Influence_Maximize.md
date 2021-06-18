@@ -103,16 +103,7 @@ The node chosen seems to be an influencial member of the largest cluster. The qu
 
 It turns out the Influence Maximization Problem, even when all the edge weights are simplified to {% raw %} $$1$$  {% endraw %}, is NP-Hard, meaning that in practice, we need to find another way to approximate {% raw %} $$S$$  {% endraw %}. We can do so by greedily grabbing from the uninfluenced vertices the vertex that maximizes the influence. We do so by taking a vertex {% raw %} $$v \in V$$  {% endraw %} that maximizes the influence {% raw %} $$I(S)$$  {% endraw %}. Then, for the remaining vertices that have not been influence, we choose the next vertex that maximizes the influence in the remaining vertices. The pseudocode for this algorithm is given by:
 
-{% raw %} $$S = \emptyset$$ {% endraw %} <br/>
-for {% raw %} $$i=1:K$$ {% endraw %} <br/>
-&nbsp;&nbsp;&nbsp;&nbsp; take {% raw %} $$v$$ {% endraw %} that maximizes {% raw %} $$I(S \cup v)-I(S)$$ {% endraw %} <br/>
-&nbsp;&nbsp;&nbsp;&nbsp; {% raw %} $$S = S \cup v$$ {% endraw %} <br/>
 
-This influence found by this algorithm is gaurunteed to be:
-
-{% raw %} $$I(S)=[1-(1-\frac{1}{K})^{i+1}]I(Optimal)$$ {% endraw %}
-
-where {% raw %} $$I(Optimal)$$ {% endraw %} is the optimal solution. We can see in the case that $$K=1$$ {% endraw %}, our solution is gaurunteed optimal, as we oberved from the earlier section.
 
 ## Worked Example Continued
 
