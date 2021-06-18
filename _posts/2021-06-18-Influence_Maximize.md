@@ -106,7 +106,7 @@ It turns out the Influence Maximization Problem, even when all the edge weights 
 {% raw %} $$S = \emptyset$$ {% endraw %} <br/>
 for {% raw %} $$i=1:K$$ {% endraw %} <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;take {% raw %} $$v$$ {% endraw %} that maximizes {% raw %} $$I(S \cup v)-I(S)$$ {% endraw %} <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;{% raw %} $$ S = \emptyset $$ {% endraw %}<br/> {% raw %} $$S = S \cup v$$ {% endraw %} <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;{% raw %} $$S = S \cup v$$ {% endraw %} <br/>
 end <br/>
 
 This influence found by this algorithm is gaurunteed to be:
