@@ -1,6 +1,6 @@
 ## David Mao
 
-I am currently a student at University of California, Davis, double majoring in Statistical Data Science and Applied Mathematics.
+I am a recent graduate of University of California, Davis, with a double major in Statistical Data Science and Applied Mathematics.
 
 
 Check out my comprehensive mathematics for data science [cheatsheet]({{ site.url }}/assets/pdf/Ds_cheatsheet.pdf). Includes mathematical formulation and basic intuition of:
